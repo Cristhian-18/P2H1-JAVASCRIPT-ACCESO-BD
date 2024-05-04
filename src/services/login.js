@@ -41,7 +41,7 @@ $('#btnLogin').click(function () {
                         usuarioEncontrado = true;
                         console.log("Usuario encontrado:", usuario.user);
                         console.log("Rol:", usuario.rol);
-                        window.location.href = '/src/components/dashboardHome.html'
+                        window.location.href = 'https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/dashboardHome.html'
                         // Si el inicio de sesión es exitoso, muestra una alerta
                         Swal.fire({
                             icon: 'success',
