@@ -70,7 +70,7 @@ function mostrarProductos({ codigo, nombre, descripcion, precio, urlimg }) {
         </div>
         <div class="ml-4">
             <div class="text-sm font-medium leading-5 text-gray-900"> 
-            
+            <span class="hidden">${urlimg}</span>
             </div>
            
         </div>
