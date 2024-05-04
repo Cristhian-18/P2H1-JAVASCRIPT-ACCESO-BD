@@ -53,7 +53,7 @@
 
                     <nav class="mt-10">
                         <a class="flex items-center px-6 py-2 mt-4 text-gray-100 bg-gray-700 bg-opacity-25"
-                            href="./dashboardHome.html">
+                            href="/src/components/dashboardHome.html">
                             <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -327,10 +327,17 @@
                                                         Codigo</th>
                                                     <th
                                                         class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-                                                        Descripcion</th>
+                                                        Nombre</th>
                                                     <th
                                                         class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-                                                        cantidad</th>
+                                                        Descripcion</th>
+
+                                                    <th
+                                                        class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                                                        Precio</th>
+                                                    <th
+                                                        class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                                                        url</th>
 
                                                     <th
                                                         class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
@@ -377,9 +384,16 @@
                                             <div class="grid gap-4 mb-4 grid-cols-2">
                                                 <input id="id" type="hidden">
                                                 <div class="col-span-2">
-                                                    <label for="name"
+                                                    <label for="codigo"
                                                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">codigo</label>
                                                     <input type="text" name="codigo" id="codigo"
+                                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-white dark:border-gray-500 dark:placeholder-gray-400 dark:text-black dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                        placeholder="Type product name" required="">
+                                                </div>
+                                                <div class="col-span-2">
+                                                    <label for="nombre"
+                                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Nombre</label>
+                                                    <input type="text" name="nombre" id="nombre"
                                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-white dark:border-gray-500 dark:placeholder-gray-400 dark:text-black dark:focus:ring-primary-500 dark:focus:border-primary-500"
                                                         placeholder="Type product name" required="">
                                                 </div>
@@ -391,11 +405,20 @@
                                                         placeholder="Write product description here"></textarea>
                                                 </div>
                                                 <div class="col-span-2 sm:col-span-1">
-                                                    <label for="price"
-                                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Cantidad</label>
-                                                    <input type="number" name="price" id="cantidad"
+                                                    <label for="precio"
+                                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Precio</label>
+                                                    <input type="number" name="precio" id="precio"
                                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-white dark:border-gray-500 dark:placeholder-gray-400 dark:text-black dark:focus:ring-primary-500 dark:focus:border-primary-500"
                                                         placeholder="$2999" required="">
+                                                </div>
+
+                                                <div class="col-span-2">
+                                                    <label for="urlimg"
+                                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Url
+                                                        Imagen</label>
+                                                    <input type="text" name="urlimg" id="urlimg"
+                                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-white dark:border-gray-500 dark:placeholder-gray-400 dark:text-black dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                        placeholder="url" required="">
                                                 </div>
                                             </div>
 
