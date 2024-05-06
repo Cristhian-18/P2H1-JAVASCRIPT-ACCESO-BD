@@ -248,6 +248,7 @@ function checkLocalStorage() {
   } else {
       document.getElementById('cierre-sesion').style.display = 'none';
       document.getElementById('cierre').style.display = 'none';
+      cerrarSesion();
   }
 }
 
