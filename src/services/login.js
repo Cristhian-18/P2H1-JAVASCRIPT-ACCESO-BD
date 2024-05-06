@@ -46,7 +46,7 @@ $('#btnLogin').click(function () {
                         localStorage.setItem('user', JSON.stringify(usuario));
                         
                         // Redirigir al usuario a la página de inicio
-                        window.location.href = '/src/components/dashboardHome.html';
+                        window.location.href = 'https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/dashboardHome.html';
                         
                         // Si el inicio de sesión es exitoso, muestra una alerta
                         Swal.fire({
@@ -55,6 +55,7 @@ $('#btnLogin').click(function () {
                             showConfirmButton: false,
                             timer: 1500
                         });
+                        
                     }
                 });
             }
