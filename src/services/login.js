@@ -41,7 +41,13 @@ $('#btnLogin').click(function () {
                         usuarioEncontrado = true;
                         console.log("Usuario encontrado:", usuario.user);
                         console.log("Rol:", usuario.rol);
-                        window.location.href = 'https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/dashboardHome.html'
+                        
+                        // Guardar la información del usuario en el localStorage
+                        localStorage.setItem('user', JSON.stringify(usuario));
+                        
+                        // Redirigir al usuario a la página de inicio
+                        window.location.href = '/src/components/dashboardHome.html';
+                        
                         // Si el inicio de sesión es exitoso, muestra una alerta
                         Swal.fire({
                             icon: 'success',
@@ -49,21 +55,20 @@ $('#btnLogin').click(function () {
                             showConfirmButton: false,
                             timer: 1500
                         });
-
-                        
                     }
                 });
             }
 
             if (!usuarioEncontrado) {
                 console.log("Usuario no encontrado o contraseña incorrecta.");
-                             // Si el inicio de sesión es exitoso, muestra una alerta
-                             Swal.fire({
-                                icon: 'error',
-                                title: 'Usuario no encontrado o contraseña incorrecta.',
-                                showConfirmButton: false,
-                                timer: 1500
-                            });
+                
+                // Si el inicio de sesión falla, muestra una alerta de error
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Usuario no encontrado o contraseña incorrecta.',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
             }
         } catch (error) {
             console.error("Error al consultar la base de datos:", error);
@@ -72,3 +77,11 @@ $('#btnLogin').click(function () {
     });
 });
 
+// Verificar si hay información de usuario en el localStorage al cargar la página
+window.addEventListener('load', function () {
+    const usuarioGuardado = localStorage.getItem('user');
+    if (usuarioGuardado) {
+        // Redirigir automáticamente al usuario a la página de inicio si hay información de usuario en el localStorage
+        window.location.href = 'https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/dashboardHome.html';
+    }
+});

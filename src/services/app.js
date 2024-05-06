@@ -237,6 +237,48 @@ $('#tablaProductos').on('click', '.btnBorrar', function () {
   })
 });
 
+// Verificar si hay datos de usuario en el Local Storage
+function checkLocalStorage() {
+  const userData = localStorage.getItem('user');
+  if (userData) {
+      // Si hay datos de usuario en el Local Storage, ocultar el enlace de inicio de sesión
+      document.getElementById('inicio-sesion').style.display = 'none';
+      document.getElementById('inicio').style.display = 'none';
+      return true;
+  } else {
+      document.getElementById('cierre-sesion').style.display = 'none';
+      document.getElementById('cierre').style.display = 'none';
+  }
+}
+
+// Llamar a la función para verificar el Local Storage cuando la página se cargue
+document.addEventListener('DOMContentLoaded', function () {
+  checkLocalStorage();
+});
+
+
+// Función para cerrar sesión
+function cerrarSesion() {
+  // Eliminar la información del usuario del localStorage
+  localStorage.removeItem('user');
+  
+  // Redirigir al usuario a la página de inicio de sesión
+  window.location.href = 'https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/index.html';
+}
+
+// Agregar un evento de clic al botón de cerrar sesión
+document.getElementById('btnCerrarSesion').addEventListener('click', function () {
+console.log("a")
+  // Llamar a la función de cerrar sesión
+  cerrarSesion();
+});
+
+
+
+
+
+
+
 
 
 

@@ -15,86 +15,135 @@
 <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
 
 <body>
-    
+
     <header>
 
     </header>
     <nav class="bg-black">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-0">
-          <div class="relative flex h-16 items-center justify-between">
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-              <!-- Mobile menu button-->
-              <button id="mobile-menu-button" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-                <span class="absolute -inset-0.5"></span>
-                <span class="sr-only">Open main menu</span>
-                <!--
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <button id="mobile-menu-button" type="button"
+                        class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="absolute -inset-0.5"></span>
+                        <span class="sr-only">Open main menu</span>
+                        <!--
                   Icon when menu is closed.
       
                   Menu open: "hidden", Menu closed: "block"
                 -->
-                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-                <!--
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        <!--
                   Icon when menu is open.
       
                   Menu open: "block", Menu closed: "hidden"
                 -->
-                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-              <div class="flex-shrink-0 items-center">
-                <a class="text-2xl font-bold text-black dark:text-white" 
-                href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/index.html">GeForce NOW</a>
-              </div>
-              <div class="hidden sm:ml-6 sm:flex sm:items-center sm:space-x-4">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->                 
-                  <a class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-green-600/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                  href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/index.html" data-twe-nav-link-ref>Home</a>
-                  <a class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-green-600/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                  href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/subcripcion.html"
-                  data-twe-nav-link-ref>Suscripción</a>
-                  <a class="text-black dark:text-green-600 lg:px-2" aria-current="page" 
-                  href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/juegos.html" data-twe-nav-link-ref>Juegos</a>
-                  <a class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-green-600/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                  href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/descarga.html" data-twe-nav-link-ref>Descargar</a>
-                            <a class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-green-600/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                  href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/help.html" data-twe-nav-link-ref>Como Jugar</a>
-                  <a class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-green-600/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2" href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/login/login.html" data-twe-nav-link-ref>Inicio de Sesion</a>
+                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex-shrink-0 items-center">
+                        <a class="text-2xl font-bold text-black dark:text-white"
+                            href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/index.html">GeForce NOW</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:items-center sm:space-x-4">
+                        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                        <a class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-green-600/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                            href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/index.html"
+                            data-twe-nav-link-ref>Home</a>
+                        <a class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-green-600/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                            href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/subcripcion.html"
+                            data-twe-nav-link-ref>Suscripción</a>
+                        <a class="text-black dark:text-green-600 lg:px-2" aria-current="page"
+                            href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/juegos.html"
+                            data-twe-nav-link-ref>Juegos</a>
+                        <a class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-green-600/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                            href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/descarga.html"
+                            data-twe-nav-link-ref>Descargar</a>
+                        <a class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-green-600/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                            href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/help.html"
+                            data-twe-nav-link-ref>Como Jugar</a>
+                        <a id="inicio-sesion"
+                            class="p-0 flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-green-600/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                            href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/login/login.html"
+                            data-twe-nav-link-ref>
+                            </span><img class="w-6 h-6 invert" src="/src/img/login.png" alt=""> <span
+                                class="mx-1"></span> Inicio
+                            Secion
+                        </a>
+                        <a id="cierre-sesion"
+                            class="p-0 flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-green-600/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                            href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/dashboardHome.html"
+                            data-twe-nav-link-ref>
+                            </span><img class="w-6 h-6 invert" src="/src/img/dashboard.png" alt=""> <span
+                                class="mx-1"></span>
+                            Dashboard
+                        </a>
 
-              </div>
+                        <a id="cierre-sesion"
+                            class=" p-0 flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-green-600/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                            href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/login/login.html"
+                            data-twe-nav-link-ref>
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                            </svg> <span class="mx-1"> </span>Cierre Sesion</a>
+
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      
+
         <!-- Mobile menu, show/hide based on menu state. -->
         <div class="sm:hidden" id="mobile-menu" hidden>
-          <div class="space-y-1 px-2 pb-3 pt-2">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Home</a>
-            <a  href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/subcripcion.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Suscripción</a>
-            <a href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/juegos.html"  class="text-black dark:text-green-600 block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Juegos</a>
-            <a  href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/descarga.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Descargar</a>
-            <a href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/help.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Como Jugar</a>
-            <a href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/login/login.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Inicio de Sesion</a>
-          </div>
+            <div class="space-y-1 px-2 pb-3 pt-2">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/index.html"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Home</a>
+                <a href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/subcripcion.html"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Suscripción</a>
+                <a href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/juegos.html"
+                    class="text-black dark:text-green-600 block rounded-md px-3 py-2 text-base font-medium"
+                    aria-current="page">Juegos</a>
+                <a href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/descarga.html"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Descargar</a>
+                <a href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/help.html"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Como
+                    Jugar</a>
+                <a id="inicio" href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/login/login.html"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Inicio
+                    de Sesion</a>
+                <a id="cierre"
+                    href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/dashboardHome.html"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Dashboard</a>
+                <a id="cierre" href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/login/login.html"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Cierre
+                    Sesion</a>
+            </div>
         </div>
-      </nav>
-      
-      <script>
+    </nav>
+
+    <script>
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-      
+
         mobileMenuButton.addEventListener('click', () => {
-          const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
-          mobileMenuButton.setAttribute('aria-expanded', !expanded);
-          mobileMenu.hidden = !mobileMenu.hidden;
+            const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
+            mobileMenuButton.setAttribute('aria-expanded', !expanded);
+            mobileMenu.hidden = !mobileMenu.hidden;
         });
-      </script>
-      
+    </script>
+
     <main>
 
         <div data-carousel="slide" class="bg-black ">
@@ -200,7 +249,7 @@
                                 class="w-30 h-30 mx-auto " fill="none" viewBox="0 0 24 24">
                             </img>
                         </a>
-                        
+
 
                         <a
                             class="block rounded-xl border border-black p-5 shadow-xl transition hover:border-green-600/10 hover:shadow-green-600/10">
@@ -237,7 +286,7 @@
 
                     <div id="productosContainer" class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
 
-                
+
 
 
 
@@ -249,7 +298,7 @@
             </section>
         </div>
 
-       
+
 
     </main>
     <footer class="bg-white dark:bg-white">
@@ -350,7 +399,7 @@
     </footer>
 
 
-       <!-- Optional JavaScript -->
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -358,7 +407,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    
+
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.14.4/dist/sweetalert2.all.min.js"></script>
 
@@ -368,7 +417,7 @@
 
     <script src="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/services/app.js"></script>
 
-    
+
 </body>
 
 </html>
