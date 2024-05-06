@@ -155,7 +155,7 @@ productosRef.on('value', (snapshot) => {
       
             </div>
             <br>
-            <button type="button"
+            <button type="button" href="https://cristhian-18.github.io/P2H1-JAVASCRIPT-ACCESO-BD/src/components/subcripcion.html"
                 class="text-white  bg-green-600 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-gray-800 dark:hover:bg-green-700 dark:focus:ring-gray-800 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Apúntate</button>
         </div>
       </div>
