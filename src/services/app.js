@@ -247,7 +247,10 @@ function checkLocalStorage() {
       return true;
   } else {
       document.getElementById('cierre-sesion').style.display = 'none';
+      document.getElementById('cierre-sesionD').style.display = 'none';
       document.getElementById('cierre').style.display = 'none';
+      document.getElementById('cierreD').style.display = 'none';
+      
     
   }
 }
